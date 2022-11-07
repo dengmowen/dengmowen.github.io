@@ -40,7 +40,6 @@ body {
 .body_left_name {
     position: absolute;
     top: 40px;
-    left: 341px;
     font-size: 40px;
     white-space: nowrap;
     letter-spacing: 5px;
