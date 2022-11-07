@@ -3,17 +3,21 @@
     padding: 0;
     border: 0;
 }
+
 .icon-love {
     width: 400px;
 }
-html, body {
+
+html,
+body {
     width: 100%;
     height: 100%;
 }
 
 body {
     /*background-color: skyblue;*/
-    overflow: hidden;   /*éšè—è¶…å‡ºçš„éƒ¨åˆ†*/
+    overflow: hidden;
+    /*éšè—è¶…å‡ºçš„éƒ¨åˆ†*/
 }
 
 .container {
@@ -33,12 +37,89 @@ body {
 
 }
 
+.body_left_name {
+    position: absolute;
+    top: 40px;
+    left: 341px;
+    font-size: 40px;
+    white-space: nowrap;
+    letter-spacing: 5px;
+    color: #99CCFF;
+    animation: fadeInRightBig 18s linear, blink 1s linear infinite;
+}
+@-webkit-keyframes fadeInRightBig {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(2000px);
+        transform: translateX(2000px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+/* 定义keyframe动画，命名为blink */
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+/* 添加兼容性前缀 */
+@-webkit-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@-ms-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@-o-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
 /*---------------------- body_left -------------------------*/
 
 /*---------------------- body_center -------------------------*/
 .container .love {
-    width: 520px; /* 13 * 40 */
-    height: 440px; /* 11 * 40 */
+    width: 520px;
+    /* 13 * 40 */
+    height: 440px;
+    /* 11 * 40 */
     left: 50%;
     top: 50%;
     position: absolute;
@@ -49,7 +130,8 @@ body {
 .love .block {
     right: 0;
     position: absolute;
-    visibility: hidden; /*æœªå¼€å§‹å‡ç©ºåŠ¨ç”»å‰éšè—*/
+    visibility: hidden;
+    /*æœªå¼€å§‹å‡ç©ºåŠ¨ç”»å‰éšè—*/
     background-color: yellow;
 }
 
@@ -72,73 +154,95 @@ body {
     0% {
         width: 0;
     }
+
     5% {
         width: 5%;
     }
+
     10% {
         width: 10%;
     }
+
     15% {
         width: 15%;
     }
+
     20% {
         width: 20%;
     }
+
     25% {
         width: 25%;
     }
+
     30% {
         width: 30%;
     }
+
     35% {
         width: 35%;
     }
+
     40% {
         width: 40%;
     }
+
     45% {
         width: 45%;
     }
+
     50% {
         width: 50%;
     }
+
     55% {
         width: 55%;
     }
+
     60% {
         width: 60%;
     }
+
     65% {
         width: 65%;
     }
+
     70% {
         width: 70%;
     }
+
     75% {
         width: 75%;
     }
+
     80% {
         width: 80%;
     }
+
     85% {
         width: 85%;
     }
+
     90% {
         width: 90%;
     }
+
     95% {
         width: 95%;
     }
+
     100% {
         width: 100%;
     }
 
 }
+
 .footer {
     bottom: 30px;
     position: relative;
     z-index: 99;
 }
+
 .footer .border .border-top {
     /*width: 0;*/
     /*display: inline-block;*/
@@ -147,7 +251,7 @@ body {
     -webkit-animation: border 312 linear;
     -o-animation: border 12s linear;
     animation: border 12s linear;
-    animation-fill-mode : both;
+    animation-fill-mode: both;
     /*border-bottom: none;*/
 }
 
@@ -160,7 +264,7 @@ body {
     -webkit-animation: border 7s linear 12s;
     -o-animation: border 7s linear 12s;
     animation: border 7s linear 12s;
-    animation-fill-mode : both;
+    animation-fill-mode: both;
     /*border-bottom: none;*/
 }
 
@@ -185,4 +289,3 @@ body {
 }
 
 /*---------------------- footer -------------------------*/
-
